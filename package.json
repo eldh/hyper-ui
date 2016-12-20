@@ -1,7 +1,7 @@
 {
   "name": "hyper-ui",
   "theme": "ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hyper UI is flat, dark & minimal theme. Inspired by Hyper terminal",
   "keywords": [
     "hyper",
