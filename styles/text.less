@@ -24,8 +24,9 @@
 .highlight-success { .highlight-mixin(@background-color-success); }
 
 .highlight-mixin(@color) {
-  padding: 1px 4px;
+  padding: 3px 5px;
   color: @text-color-highlight;
+  font-weight: 400;
   border-radius: @component-border-radius;
   background-color: @color;
 }
@@ -35,6 +36,6 @@
 // Shown when no tabs are open.
 
 .background-message {
-  font-weight: bold;
+  font-weight: 400;
   color: @text-color-subtle;
 }

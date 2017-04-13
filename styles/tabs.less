@@ -5,11 +5,11 @@
 
 .tab-bar {
     background-color: @tab-bar-background-color;
-    border-top: 1px solid @base-border-color;
+    border-top: 0px solid @base-border-color;
     border-bottom: 1px solid @base-border-color;
 
     .tab {
-        color: @text-color;
+        color: @text-color-subtle;
         height: @tab-height;
         line-height: @tab-height;
         font-size: @font-size;
@@ -19,6 +19,8 @@
 
         .title {
             text-align: center;
+            font-weight: 300;
+            // padding-left: 3px;
 
             .icon {
                 &::before {
@@ -30,7 +32,7 @@
         &.active {
             flex: 1;
             color: @text-color-selected;
-            box-shadow: 0 1px 0 @base-background-color;
+            // box-shadow: 0 1px 0 @base-background-color;
 
             .title {
                 padding: 0;

@@ -10,32 +10,34 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
-@primary-color: #50E3C2;
+@primary-color: #bba43f;
+@dark-gray: rgb(24, 24, 24);
+@black: rgb(0, 0, 0);
 
 // Text Colors
-@text-color:           hsl(0,0%,66%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color:           #a7a7a7;
+@text-color-subtle:    darken(@text-color, 30%);
+@text-color-highlight: lighten(@text-color, 20%);
+@text-color-selected:  lighten(@text-color, 5%);
 
-@text-color-info:    #5D96E4;
+@text-color-info:    #4e76ad;
 @text-color-success: @primary-color;
-@text-color-warning: #FFD082;
-@text-color-error:   #F83453;
+@text-color-warning: #c7a05e;
+@text-color-error:   #c63a50;
 
 // Background colors
-@background-color-info:    #5070E3;
-@background-color-success: @primary-color;
-@background-color-warning: #FFA40D;
-@background-color-error:   #F60C31;
+@background-color-info:    darken(#243e9a, 10%);
+@background-color-success: darken(#99761c, 10%);
+@background-color-warning: darken(#9c7e33, 10%);
+@background-color-error:   darken(#a22938, 10%);
 
 @background-color-highlight: lighten(@base-background-color, 3%);
 @background-color-selected:  lighten(@base-background-color, 5%);
 @app-background-color:       @base-background-color;
 
 // Base colors
-@base-background-color: #181818;
-@base-border-color:     #333333;
+@base-background-color: @black;
+@base-border-color:     lighten(@black, 9%);
 @base-action-color:     @primary-color;
 
 // Component colors
@@ -57,8 +59,8 @@
 @overlay-background-color: @base-background-color;
 @overlay-border-color:     @base-border-color;
 
-@button-background-color:          lighten(@base-background-color, 10%);
-@button-background-color-hover:    lighten(@button-background-color, 12%);
+@button-background-color:          lighten(@base-background-color, 7%);
+@button-background-color-hover:    lighten(@button-background-color, 3%);
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
@@ -79,18 +81,18 @@
 @ui-site-color-5: #EBDD5B;             // yellow
 
 // Sizes
-@font-size: 12px;
+@font-size: 11px;
 @input-font-size: 14px;
 
 @disclosure-arrow-size: 12px;
 
-@component-padding: 10px;
+@component-padding: 8px;
 @component-icon-padding: 5px;
 @component-icon-size: 16px;
 @component-line-height: 25px;
 
-@tab-height: 34px;
+@tab-height: 33px;
 
 // Misc
 @component-border-radius: 2px;
-@font-family: 'Inconsolata', '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@font-family: 'SF Mono', 'Inconsolata', '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
